@@ -1,0 +1,72 @@
+a { color: #006699; text-decoration: none; }
+a:visited { color: #006699; }
+a:hover, a:focus { color: #006699; }
+a:active { color: #006699; }
+
+.fleft { float:left; }
+.fright { float:right; }
+
+body {
+	background-color:#CCC;
+	font: normal 13px/20px Helvetica, Verdana, Arial, sans-serif;
+	margin:0px;
+}
+
+
+h1 {
+    margin:0;
+    padding:0 0 10px;
+    font-size:15px;
+    text-decoration:underline;
+}
+
+#wrap {
+    width:850px;
+    margin:5px auto;
+}
+
+.box{
+    margin: 5px 0;
+    border:solid 1px #999;
+    background:#EFEFEF;
+    color:#222222;
+    padding:10px;
+    text-align:center;
+}
+
+.info {
+    margin: 5px 0;
+    border:solid 1px #999;
+    background:#fcf9ce;
+    color:#222222;
+    padding:10px;
+    text-align:center;
+    clear:both;
+}
+
+.alt1 { background-color:#DDD; }
+
+table td { padding:5px; vertical-align:top; }
+
+table {
+	width: 100%;
+	border: 1px solid #aaa;
+	text-align:left;
+}
+
+table td {
+    padding:5px 2px 5px 2px;
+}
+
+table th {
+	font-weight: bold;
+	text-align: left;
+	padding:2px;
+	background-color:#CCC;
+}
+
+input, select, textarea, button{
+    border:1px solid #999;
+}
+
+select { min-width:200px; }

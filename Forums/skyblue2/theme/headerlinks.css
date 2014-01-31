@@ -1,0 +1,58 @@
+ul.hl_list {
+	list-style-type:none;
+	float:right;
+	padding-right: 48px;
+}
+
+li.forums_icon {
+	float:left;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url({T_THEME_PATH}/images/forums_icon.png);
+}
+
+li.wiki_icon {
+	float:left;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url({T_THEME_PATH}/images/wiki_icon.png);
+}
+
+li.imagegal_icon {
+	float:left;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url({T_THEME_PATH}/images/imagegal_icon.png);
+}
+
+li.score_icon {
+	float:left;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url({T_THEME_PATH}/images/score_icon.png);
+}
+li.testex_icon {
+	float:left;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-image: url({T_THEME_PATH}/images/testex.png);
+}
+a.hl_link {
+	float: left;
+	height: 80px;
+	width: 80px;
+	position: relative;
+}
+
+a.hl_link:hover {
+	color:white;
+}
+
+div.hl_caption {
+	bottom: -16pt;
+	position: absolute;
+	width: 100%;
+	color:white;
+	font-size: 1.2em;
+	text-align: center;
+}

@@ -1,0 +1,164 @@
+
+body {
+  padding-top: 50px;
+  background:#eff3f6;
+}
+div{
+    display:block;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.navbar{
+	background-color:#2e66b6;
+	}
+.navbar-inverse .navbar-brand{
+	color:#FFF;
+	font-weight:bold;
+	}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
+	background-color:#28589d;
+	}
+.navbar-nav {
+float: right;
+margin: 0;
+margin-right: 15%;
+}
+.navbar-inverse .navbar-nav > li > a {
+color: #FFF;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+	background-color:#28589d;
+}
+.Slideshow{
+	margin-top: 50px;
+	/*width:50%;*/
+	float:left;
+    margin-bottom:10%;
+    
+
+}
+
+.links_bar{
+    position:absolute;
+    height:100px;
+    
+    width:inherit;
+}
+.links_bar > ul{
+	list-style:none;
+	font-size:18px;
+
+}
+.links_bar >span{
+    /*width:132px;*/
+    display:inline-block;
+}
+.links_bar > ul > li{
+	display:inline;
+	margin-right: 10%;
+
+}
+.upper_content{
+    min-height:405px; 
+}
+#about{
+  position:relative;
+   /* width:50%;*/
+    float:right;
+    margin-top:5%
+}
+#about_text{
+    margin-top:3%;
+    font-size:17px
+}
+
+#feed_content{
+    position:relative;
+    margin-top:6%;
+    /*margin-left:7%;*/
+	/*margin-top:50px;*/
+    /*margin-bottom:100px;*/
+    height:180px;
+    width:100%;
+
+}
+.recent_posts_container{
+	/*width:50%;*/
+	float: left;
+
+}
+.wiki_edits{
+	/*width:50%;*/
+	float: right;
+	font-size: 15px;
+   
+}
+.wiki_edits > h2{
+}
+#recent_content{
+    font-size:15px;
+}
+#slider, #slider div.sliderInner {
+width: 400px;
+height: 300px;
+}
+.centered_staff{
+ margin-left:40%;   
+}
+.centered_main_title{
+ margin-left:38%;   
+}
+.admin{
+    color:#AA0000;
+}
+.moderator{
+    color:#00AA00;
+}
+.wikimod{
+    color:#000077;   
+}
+.person{
+    height:300px;
+    width:300px;
+    display:block;
+    float:left;
+    padding-left:10px;
+    padding-right:10px;
+}
+.name{
+    margin-left:35%;
+    font-size:20px;
+}
+.user_blocks{
+    margin-left:20%; 
+    margin-top:2%;
+        height:305px;
+}
+/*.drop{
+    margin-top:25%;
+}*/
+.description{
+    width:900px;
+    margin-left:15%;
+    margin-top:1%;
+}
+.contents{
+    padding-left:5%;   
+    padding-right:5%;
+    font-size:16px;
+}
+.tos{
+    font-size:13px;
+}
+.para{
+    margin-top:1%;
+    height:inherit;
+    margin-bottom:1%;
+}
+.last{
+   margin-bottom: bottom:50px;
+}
+.title{
+}

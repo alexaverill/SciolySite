@@ -1,0 +1,124 @@
+<!-- INCLUDE overall_header.html -->
+
+<h2>Nationals Prediction Contest</h2>
+
+<!-- IF PREDICT_ALERTBOX -->
+<div class="panel bg1">
+	<div class="inner"><span class="corners-top"><span></span></span>
+		{PREDICT_ALERTBOX}
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+<!-- ENDIF -->
+
+<!-- IF PREDICT_INFOBOX -->
+<div class="panel bg1">
+	<div class="inner"><span class="corners-top"><span></span></span>
+		{PREDICT_INFOBOX}
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+<!-- ENDIF -->
+
+<!-- IF DIV_B_SELECTS -->
+<form method="get" id="form" action="add.php">
+<div class="panel bg2">
+	<div class="inner"><span class="corners-top"><span></span></span>
+	<h3>Select Top Division B Teams</h3>
+	
+	<fieldset>
+		<dl>
+			{DIV_B_SELECTS}
+		</dl>
+	<input type="hidden" name="div" value="B" />
+	</fieldset>
+	
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+<div class="panel bg3">
+	<div class="inner"><span class="corners-top"><span></span></span>
+	<fieldset class="submit-buttons">
+		<input type="submit" name="submit" value="Submit" class="button1" />
+	</fieldset>
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</form>
+<!-- ENDIF -->
+
+<!-- IF DIV_C_SELECTS -->
+<form method="get" id="form2" action="add.php">
+<div class="panel bg2">
+	<div class="inner"><span class="corners-top"><span></span></span>
+	<h3>Select Top Division C Teams</h3>
+	
+	<fieldset>
+		<dl>
+			{DIV_C_SELECTS}
+		</dl>
+	<input type="hidden" name="div" value="C" />
+	</fieldset>
+	
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+<div class="panel bg3">
+	<div class="inner"><span class="corners-top"><span></span></span>
+	<fieldset class="submit-buttons">
+		<input type="submit" name="submit" value="Submit" class="button1" />
+	</fieldset>
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+</form>
+<!-- ENDIF -->
+
+<div class="forumbg">
+	<div class="inner">
+	<span class="corners-top"><span></span></span>
+
+	<table class="table1" cellspacing="1">
+	<thead>
+	<tr>
+		<th class="name">Most Favored B Teams</th>
+	</tr>
+	</thead>
+	<tbody>
+	
+		{FAVORED_B_TEAMS}
+	
+	</tbody>
+	</table>
+
+	<span class="corners-bottom"><span></span></span>
+	</div>
+</div>
+
+<div class="forumbg">
+	<div class="inner">
+	<span class="corners-top"><span></span></span>
+
+	<table class="table1" cellspacing="1">
+	<thead>
+	<tr>
+		<th class="name">Most Favored C Teams</th>
+	</tr>
+	</thead>
+	<tbody>
+	
+		{FAVORED_C_TEAMS}
+	
+	</tbody>
+	</table>
+
+	<span class="corners-bottom"><span></span></span>
+	</div>
+</div>
+
+<!-- tehkubix's analytics -->
+<script type="text/javascript">
+disableSelection(document.body) //disable text selection on entire body of page
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+var pageTracker = _gat._getTracker("UA-2893329-1");
+pageTracker._trackPageview();
+</script>
+
+<!-- INCLUDE overall_footer.html -->

@@ -1,0 +1,48 @@
+<!-- INCLUDE overall_header.html -->
+
+<h2>Staircase of Wasted Time</h2>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="modules/exporting.js"></script>
+
+<script type="text/javascript">
+var currentSelected;
+var currentMetric = "total";
+var chart;
+function loadChart() {
+	$.getJSON('wowt.php?id=wowt-barchart-cumulative&sort=' + currentMetric, function(data) {
+		data.tooltip = {
+			formatter: function() {
+				return '<b>'+ this.x +'</b><br/>'+
+					 this.series.name + ': '+ (this.y/this.total*100).toPrecision(3) + '%';
+			}
+		}
+		if(chart != undefined) {
+			chart.destroy();
+		}
+		chart = new Highcharts.Chart(data);
+	});
+}
+
+function selectMetric(link, metric) {
+	currentMetric = metric;
+	loadChart();
+	currentSelected.style.fontWeight = "normal";
+	link.style.fontWeight = "bold";
+	currentSelected = link;
+}
+</script>
+
+Sort by: <a id="selectTotal" href="#" onclick="selectMetric(this, 'total'); return false;">Total</a> <a id="selectUseful" href="#" onclick="selectMetric(this, 'useful'); return false;">Useful</a> <a id="selectUseless" href="#" onclick="selectMetric(this, 'useless'); return false;">Useless</a> <a id="selectWasted" href="#" onclick="selectMetric(this, 'wasted'); return false;">Wasted</a>
+<div id="wowt-barchart-cumulative" style="width: 95%; height: 1000px; margin: 0 auto"></div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+	currentSelected = document.getElementById("selectTotal");
+	selectMetric(currentSelected, "total");
+});
+</script>
+
+<!-- INCLUDE jumpbox.html -->
+<!-- INCLUDE overall_footer.html -->
