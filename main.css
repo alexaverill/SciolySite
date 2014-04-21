@@ -38,7 +38,9 @@ color: #FFF;
     
 
 }
-
+.icons{
+    padding-top:65px;
+}
 .links_bar{
     position:absolute;
     height:100px;
